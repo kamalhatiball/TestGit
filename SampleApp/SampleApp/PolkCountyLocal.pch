@@ -1,0 +1,54 @@
+//
+//  PolkCountyLocal.pch
+//  PolkCountyLocal
+//
+//  Created by Developer IOS on 23/07/18.
+//  Copyright © 2018 Developer IOS. All rights reserved.
+//
+
+#ifndef PolkCountyLocal_pch
+#define PolkCountyLocal_pch
+
+#define UDP_SOCKET_PORT ((int) 2556)
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define is_iPad     UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
+#define appDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+#define APPDELEGATE  (AppDelegate *)[[UIApplication sharedApplication] delegate]
+#define userDefaults  [NSUserDefaults standardUserDefaults]
+
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+
+#import "AFNetworking.h"
+#import "Reachability.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import "MBProgressHUD.h"
+#import <LGSideMenuController/LGSideMenuController.h>
+#import <LGSideMenuController/UIViewController+LGSideMenuController.h>
+#import "LLCServiceHelperClass.h"
+#import <UserNotifications/UserNotifications.h>
+//#import <FBSDKLoginKit.h>
+//#import <FBSDKCoreKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIImage+GIF.h>
+//#import <YTPlayerView.h>
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <AVKit/AVKit.h>
+
+#import "UIViewController+MJPopupViewController.h"
+#import "Common.h"
+#import "OptionsPickerSheetView.h"
+#import "UIView+Toast.h"
+#import "RootTabController.h"
+#import "ARPopMenu.h"
+
+#import "Dashboard.h"
+#import "LeftMenuVC.h"
+#import "StartUpVC.h"
+
+
+
+#endif /* PolkCountyLocal_pch */
